@@ -1,4 +1,4 @@
-package com.csdn.eval.lambda;
+package com.csdn.eval.lambda.retry;
 
 public class LockRetryController {
 
@@ -19,7 +19,6 @@ public class LockRetryController {
         if (--lockRetryTimes < 0) {
             throw new RuntimeException("Global lock wait timeout", e);
         }
-
         try {
             Thread.sleep(lockRetryInterval);
         } catch (InterruptedException ignore) {

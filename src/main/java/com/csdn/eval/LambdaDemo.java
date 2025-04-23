@@ -1,4 +1,5 @@
 package com.csdn.eval;
 
-public class LamdaDemo {
+public class LambdaDemo {
+
 }
